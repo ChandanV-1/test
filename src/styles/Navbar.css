@@ -1,0 +1,60 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 6rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.signin{
+  background-color: #50c878;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+.signin:hover{
+  background-color: #fff;
+  color:#50c878 ;
+}
+.home{
+margin-right: 1.5rem;
+  font-weight: 500;
+  color: #50c878;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.navbar div a:hover {
+  color: #3a9157;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar div {
+    margin-top: 0.5rem;
+  }
+
+  .navbar div a {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+}
